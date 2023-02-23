@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servey Form</title>
+</head>
+<body>
+    <form action="" id="servey-form">
+    <fieldset>
+        <legend><h1 id="title">Registration</h1></legend>
+        <legend><p id="description"> This form is valid for only new applicant</p></legend>
+        <table>
+
+            <!-- Full Name -->
+            <div class="name">
+                <tr>
+                    <td><label for="name" id="name-lable">Full Name</label></td>
+                    <td><input type="text" name="name" id="name" autofocus></td>
+                </tr>
+            </div>
+
+            <!-- Email -->
+            <div class="email">
+                <tr>
+                    <td><label for="email" id="email-lable">Email</label></td>
+                    <td><input tabindex="2" type="email" name="email" id="email" multiple></td>
+                </tr>
+            </div>
+
+            <!-- Password -->
+            <div class="pass">
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password" name="pass" id="pass"></td>
+                </tr>
+            </div>
+            
+            <!-- Phone -->
+            <div class="phone">
+                <tr>
+                    <td><label for="phone">Phone</label></td>
+                    <td><input type="tel" name="phone" id="phone" 
+                        pattern="[+][0-9]{3}-[0-9]{4}-[0-9]{3}"></td>
+                </tr>
+
+            <!-- Age -->    
+            </div>
+                <tr>
+                    <td><label for="age-2" id="number-lable">Age</label></td>
+                    <td><input type="number" name="age-2" id="age-2" min="18" max="50" value="20"></td>
+                </tr>
+            </div>
+
+            <!-- Date -->
+            <div class="date">
+                <tr>
+                    <td><label for="date">Date</label></td>
+                    <td><input type="date" name="date" id="date" min="2022-04-05" max="2025-04-05"></td>
+                </tr>
+            </div>
+
+            <!-- Gender -->
+            <div class="gender">
+                <tr>
+                    <td> Enter your Gender </td>
+                    <td>
+                        <fieldset>
+                            <input type="radio" name="gender" id="male" value="male" checked>
+                            <label for="male">Male</label>
+                            <br>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="male">Female</label>
+                        </fieldset>
+                    </td>
+                </tr>
+            </div>
+
+            <!-- Gender -->
+            <div class="drinks">
+                <tr>
+                    <td> Enter your Drink </td>
+                    <td>
+                        <fieldset>
+                            <input type="checkbox" name="drinks" id="tea" value="tea">
+                            <label for="tea">Tea</label>
+                            <br>
+                            <input type="checkbox" name="drinks" id="milk" value="milk" checked>
+                            <label for="milk">Milk</label>
+                            <br>
+                            <input type="checkbox" name="drinks" id="coffee" value="coffee">
+                            <label for="coffee">Coffee</label>
+                        </fieldset>
+                    </td>
+                </tr>
+            </div>
+
+            <!-- Country -->
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select name="country" id="dropdown">
+                        <option value="Ghana">Ghana</option>
+                        <option value="ethiopia">Ethiopia</option>
+                        <option value="egipt">Egipt</option>
+                        <option value="sudan">Sudan</option>
+                        <option value="cameron" selected>Cameron</option>
+                        <option value="southafrica">South Africa</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Comment -->
+            <div class="comment">
+                <tr>
+                    <td><label for="comment">Comment</label></td>
+                    <td><textarea name="comment" id="comment" cols="30" rows="10">please enter your comment</textarea></td>
+                </tr>
+            </div>
+
+            <!-- Submit -->
+            <div class="submit">
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="submit" id="submit" value="submit">
+                    </td>
+                </tr>
+            </div>
+        </table>
+    </fieldset>
+    </form>
+
+</body>
+
+</html>

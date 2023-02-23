@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="" id="servey-form">
+    <form action="" id="survey-form">
     <fieldset>
         <legend><h1 id="title">Registration</h1></legend>
         <legend><p id="description"> This form is valid for only new applicant</p></legend>
@@ -18,7 +18,7 @@
             <div class="name">
                 <tr>
                     <td><label for="name" id="name-lable">Full Name</label></td>
-                    <td><input type="text" name="name" id="name" autofocus></td>
+                    <td><input type="text" name="name" id="name" autofocus required></td>
                 </tr>
             </div>
 
@@ -26,7 +26,7 @@
             <div class="email">
                 <tr>
                     <td><label for="email" id="email-lable">Email</label></td>
-                    <td><input tabindex="2" type="email" name="email" id="email" multiple></td>
+                    <td><input tabindex="2" type="email" name="email" id="email" multiple required></td>
                 </tr>
             </div>
 
@@ -50,7 +50,7 @@
             </div>
                 <tr>
                     <td><label for="age-2" id="number-lable">Age</label></td>
-                    <td><input type="number" name="age-2" id="age-2" min="18" max="50" value="20"></td>
+                    <td><input type="number" name="age-2" id="age-2" min="18" max="50" value="20" required></td>
                 </tr>
             </div>
 
@@ -134,5 +134,3 @@
     </form>
 
 </body>
-
-</html>
